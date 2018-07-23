@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="daddds">
+        <item>ccc</item>
+        <item>ddddd</item>
+    </string-array>
+
+    <string-array name="dsfdsfsd">
+        <item>qqq</item>
+        <item>aaaaa</item>
+    </string-array>
+
+    <string-array name="dfgfdgfdgdf">
+        <item>343002</item>
+        <item>343003</item>
+    </string-array>
+
+    <string-array name="sssdddd">
+        <item>ee</item>
+        <item>rrrr</item>
+    </string-array>
+
+    <string-array name="hbghhhh">
+        <item>303011001</item>
+        <item>303011002</item>
+    </string-array>
+
+    <string-array name="jkkkkk">
+        <item>50000</item>
+        <item>100000</item>
+        <item>150000</item>
+        <item>200000</item>
+        <item>300000</item>
+        <item>500000</item>
+        <item>1000000</item>
+        <item>1500000</item>
+        <item>2000000</item>
+        <item>2500000</item>
+        <item>3000000</item>
+        <item>3500000</item>
+        <item>4000000</item>
+        <item>4500000</item>
+        <item>5000000</item>
+    </string-array>
+
+    <string-array name="llkkk">
+        <item>306006004</item>
+        <item>306006005</item>
+        <item>306006018</item>
+        <item>306006006</item>
+        <item>306006007</item>
+        <item>306006009</item>
+        <item>306006014</item>
+        <item>306006019</item>
+        <item>306006020</item>
+        <item>306006021</item>
+        <item>306006022</item>
+        <item>306006023</item>
+        <item>306006024</item>
+        <item>306006025</item>
+        <item>306006026</item>
+    </string-array>
+
+    <string-array name="ewed">
+        <item>2000.00</item>
+        <item>5000.00</item>
+        <item>10000.00</item>
+        <item>20000.00</item>
+    </string-array>
+
+    <string-array name="dsfff">
+        <item>365001</item>
+        <item>365002</item>
+        <item>365003</item>
+        <item>365004</item>
+    </string-array>
+
+    <string-array name="lkkj">
+        <item>ddd</item>
+        <item>ffff</item>
+    </string-array>
+
+</resources>

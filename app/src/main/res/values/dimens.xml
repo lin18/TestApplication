@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider">0.5dp</dimen>
+    <dimen name="cell_marginLeft">15dp</dimen>
+    <dimen name="marginLeft">10dp</dimen>
+    <dimen name="marginRight">4dp</dimen>
+    <dimen name="marginTop">20dp</dimen>
+    <dimen name="icon_width">42dp</dimen>
+    <dimen name="arrowsMarginRight">13dp</dimen>
+    <dimen name="line_marginLeft">16dp</dimen>
+
+    <dimen name="divider_height">0.5dp</dimen>
+
+    <dimen name="input_paddingBottom">9dp</dimen>
+</resources>

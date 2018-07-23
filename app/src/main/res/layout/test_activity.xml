@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:divider="@drawable/linear_divider_horizontal"
+        app:showDividers="middle|end">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="222"
+                android:textColor="@color/orangeColor"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/guide"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignRight="@id/guide"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/dividerColor"
+                app:srcCompat="@drawable/ic_image" />
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image"
+                android:layout_alignLeft="@+id/image"
+                android:layout_alignRight="@+id/image"
+                android:layout_alignTop="@+id/image"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_camera" />
+
+            <TextView
+                android:id="@+id/flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/image"
+                android:layout_alignTop="@+id/image"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="1dp"
+                android:text="flag"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image"
+                android:layout_alignLeft="@+id/image"
+                android:layout_alignRight="@+id/image"
+                android:background="#99000000"
+                android:gravity="center"
+                android:text="ddd"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <Switch
+            style="@style/SwitchStyle"
+            android:layout_marginTop="8dp"
+            android:text="aaa" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.test.test.widget.InputEdit
+                android:id="@+id/name"
+                style="@style/InputEditTextStyle"
+                android:layout_marginRight="0.5dp"
+                android:layout_marginTop="0.5dp"
+                android:layout_toLeftOf="@+id/holder"
+                android:hint="bbbbb"
+                app:inputText="bb" />
+
+            <View
+                android:layout_width="@dimen/divider_height"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignTop="@+id/name"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/holder"
+                android:background="@color/dividerColor" />
+
+            <TextView
+                android:id="@+id/holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/name"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/name"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:text="choice"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <Switch
+            style="@style/SwitchStyle"
+            android:checked="true"
+            android:text="ccc" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/car"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textColor="@color/titleColor"
+                android:textSize="15sp"
+                android:text="dd"/>
+
+            <TextView
+                android:id="@+id/ssdd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/car"
+                android:drawableLeft="@drawable/ic_keyboard"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="ssdd"
+                android:textColor="@color/titleColor"
+                android:textSize="15sp" />
+
+            <com.test.test.widget.XEditText
+                android:id="@+id/plate_number"
+                style="@style/InputEditTextStyle"
+                android:layout_marginRight="0.5dp"
+                android:layout_toLeftOf="@+id/holderCar"
+                android:layout_toRightOf="@+id/ssdd"
+                android:hint="hint"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:paddingLeft="15dp" />
+
+            <View
+                android:layout_width="@dimen/divider_height"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/plate_number"
+                android:layout_alignTop="@+id/plate_number"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/holderCar"
+                android:background="@color/dividerColor"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/holderCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/plate_number"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/plate_number"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:text="choice"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.test.test.widget.InputEdit
+            style="@style/InputEditTextStyle"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="hint"
+            android:inputType="textEmailAddress"
+            android:maxLength="17"
+            app:inputText="asdsdf" />
+
+        <com.test.test.widget.InputEdit
+            style="@style/InputEditTextStyle"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="hint"
+            android:inputType="textEmailAddress"
+            android:maxLength="17"
+            app:inputText="dfdefsdf" />
+
+        <com.test.test.widget.CellView
+            style="@style/CellViewStyle"
+            app:cellTipText="_hint"
+            app:cellTitleText="ff" />
+
+        <com.test.test.widget.CellView
+            style="@style/CellViewStyle"
+            app:cellTipText="hint"
+            app:cellTitleText="type" />
+
+        <com.test.test.widget.CellView
+            style="@style/CellViewStyle"
+            app:cellTipText="hint"
+            app:cellTitleText="versions" />
+
+        <com.test.test.widget.InputEdit
+            style="@style/InputEditTextStyle.Extra"
+            android:hint="hint"
+            android:inputType="number"
+            app:inputExtraText="zz"
+            app:inputText="num" />
+
+        <com.test.test.widget.CellView
+            style="@style/CellViewStyle"
+            app:cellTipText="hint"
+            app:cellTitleText="gg" />
+
+        <com.test.test.widget.CellView
+            style="@style/CellViewStyle"
+            app:cellTipText="hint"
+            app:cellTitleText="register" />
+
+        <Switch
+            style="@style/SwitchStyle"
+            android:text="ee" />
+
+        <com.test.test.widget.CellView
+            android:id="@+id/transferRegister"
+            style="@style/CellViewStyle"
+            android:visibility="gone"
+            app:cellTipText="_hint"
+            app:cellTitleText="ff" />
+
+        <com.test.test.widget.InputEdit
+            style="@style/InputEditTextStyle.Extra"
+            android:hint="hint"
+            android:inputType="number"
+            app:inputExtraText="dddd"
+            app:inputText="price" />
+
+        <com.test.test.widget.CellView
+            style="@style/CellViewStyle"
+            app:cellTipText="_hint"
+            app:cellTitleText="uuu" />
+
+        <com.test.test.widget.CellView
+            style="@style/CellViewStyle"
+            app:cellTitleText="iii" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            android:layout_marginTop="10dp"
+            app:check_on="true"
+            app:check_text="jj"
+            app:show_tip="true"
+            app:show_tip_below="false"
+            app:tip="jjjj"
+            app:tip_below="jjjjj"
+            app:title="jjjjjjjj"
+            app:title_check_on="true" />
+
+        <com.test.test.CheckSpinnerView
+            style="@style/CheckInputStyle"
+            app:check_in="true"
+            app:check_text="kk"
+            app:prompt="hint"
+            app:show_below_tip="false"
+            app:spinner="@array/jkkkkk"
+            app:spinner_id="@array/llkkk"
+            app:tip="amount"
+            app:tip_below="cost"
+            app:title="liability" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:check_on="true"
+            app:check_text="ll"
+            app:show_tip="true"
+            app:show_tip_below="false"
+            app:tip="llll"
+            app:tip_below="llllll"
+            app:title="llllllll"
+            app:title_check_on="true" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:check_on="true"
+            app:check_text="qq"
+            app:show_tip="true"
+            app:show_tip_below="false"
+            app:tip="qqqq"
+            app:tip_below="qqqqqqq"
+            app:title="qqqqqqqqqqq" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:check_on="true"
+            app:check_text="ww"
+            app:show_below_tip="false"
+            app:show_tip="true"
+            app:tip="wwww"
+            app:tip_below="wwwwww"
+            app:title="wwwwwwwww" />
+
+        <com.test.test.CheckSpinnerView
+            style="@style/CheckInputStyle"
+            android:paddingBottom="12dp"
+            app:prompt="hint"
+            app:show_below_tip="false"
+            app:spinner="@array/sssdddd"
+            app:spinner_id="@array/hbghhhh"
+            app:tip="type"
+            app:tip_below="cost"
+            app:title="breakage" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:check_on="true"
+            app:check_text="ee"
+            app:show_tip="true"
+            app:show_tip_below="false"
+            app:tip="eeee"
+            app:tip_below="eeeeee"
+            app:title="eeeeeeeeee" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:check_on="true"
+            app:check_text="tt"
+            app:show_tip="true"
+            app:show_tip_below="false"
+            app:tip="tttt"
+            app:tip_below="tttttttt"
+            app:title="tttttt" />
+
+        <com.test.test.CheckSpinnerView
+            style="@style/CheckInputStyle"
+            app:check_in="true"
+            app:check_text="deductible"
+            app:prompt="hint"
+            app:show_below_tip="false"
+            app:spinner="@array/ewed"
+            app:spinner_id="@array/dsfff"
+            app:tip="amount"
+            app:tip_below="cost"
+            app:title="insurance" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:check_on="true"
+            app:check_text="yy"
+            app:show_tip="false"
+            app:show_tip_below="false"
+            app:tip_below="yyyyyy"
+            app:title="yyyy" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:show_tip="false"
+            app:show_tip_below="false"
+            app:tip_below="mm"
+            app:title="mmmm"
+            app:title_check_on="true" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:check_on="true"
+            app:check_text="nn"
+            app:show_tip="true"
+            app:show_tip_below="false"
+            app:tip="nnnn"
+            app:tip_below="nnnnnn"
+            app:title="nnnnnnn" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:show_tip="false"
+            app:show_tip_below="false"
+            app:tip_below="bb"
+            app:title="bbbb"
+            app:title_check_on="true" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:check_on="true"
+            app:check_text="vv"
+            app:show_tip="true"
+            app:show_tip_below="false"
+            app:tip="vvvv"
+            app:tip_below="vvvvvv"
+            app:title="vvvvvvvv" />
+
+        <com.test.test.CheckInputView
+            style="@style/CheckInputStyle"
+            app:show_tip="false"
+            app:show_tip_below="false"
+            app:tip_below="rr"
+            app:title="rrrr"
+            app:title_check_on="true" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>

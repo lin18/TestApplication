@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="XEditText">
+        <attr name="x_separator" format="string"/>
+        <attr name="x_customizeMarkerEnable" format="boolean"/>
+        <attr name="x_iOSStyleEnable" format="boolean"/>
+        <attr name="x_disableEmoji" format="boolean"/>
+        <attr name="x_showMarkerTime">
+            <enum name="after_input" value="0"/>
+            <enum name="before_input" value="1"/>
+            <enum name="always" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="InputEdit">
+        <attr name="inputHasTextInput" format="boolean" />
+        <attr name="inputPaddingLeft" format="dimension|reference" />
+        <attr name="inputTextPaddingRight" format="dimension|reference" />
+        <attr name="inputPaddingRight" format="dimension|reference" />
+        <attr name="inputPaddingBottom" format="dimension|reference" />
+        <attr name="inputText" format="string|reference" />
+        <attr name="inputTextColor" format="color|reference" />
+        <attr name="inputTextSize" format="dimension|reference" />
+        <attr name="inputExtraText" format="string|reference" />
+        <attr name="inputExtraPaddingLeft" format="dimension|reference" />
+        <attr name="inputEditTrandparent" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CellView">
+        <attr name="cellMarginLeft" format="dimension|reference" />
+        <attr name="cellIcon" format="reference" />
+        <attr name="cellIconWidth" format="dimension|reference" />
+        <attr name="cellArrowsMarginRight" format="dimension|reference" />
+        <attr name="cellMarginRight" format="dimension|reference" />
+        <attr name="cellTitleText" format="string|reference" />
+        <attr name="cellTitleTextSizeMutli" format="dimension|reference" />
+        <attr name="cellTitleTextSizeSimple" format="dimension|reference" />
+        <attr name="cellTitleTextColor" format="color|reference" />
+        <attr name="cellSubTitleText" format="string|reference" />
+        <attr name="cellSubTitleTextSize" format="dimension|reference" />
+        <attr name="cellSubTitleTextColor" format="color|reference" />
+        <attr name="cellTipText" format="string|reference" />
+        <attr name="cellTipTextSize" format="dimension|reference" />
+        <attr name="cellTipTextColor" format="color|reference" />
+        <attr name="cellTipBackGround" format="reference" />
+        <attr name="cellTipMarginLeft" format="dimension|reference" />
+        <attr name="cellArrowsVisibility">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="title" format="string|reference" />
+    <attr name="sub_title" format="string|reference" />
+    <attr name="tip" format="string|reference" />
+    <attr name="check_text" format="string|reference" />
+    <attr name="tip_below" format="string|reference" />
+
+    <declare-styleable name="CheckInputView">
+        <attr name="title"/>
+        <attr name="title_check_on" format="boolean" />
+        <attr name="sub_title"/>
+        <attr name="tip"/>
+        <attr name="show_tip" format="boolean" />
+        <attr name="tip_below" />
+        <attr name="show_tip_below" format="boolean" />
+        <attr name="check_text"/>
+        <attr name="check_on" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckSpinnerView">
+        <attr name="title" />
+        <attr name="title_check_in" format="boolean" />
+        <attr name="sub_title" />
+        <attr name="tip" />
+        <attr name="tip_below" />
+        <attr name="show_below_tip" format="boolean" />
+        <attr name="check_text"/>
+        <attr name="prompt" format="string|reference" />
+        <attr name="spinner" format="integer" />
+        <attr name="spinner_id" format="integer" />
+        <attr name="check_in" format="boolean" />
+    </declare-styleable>
+
+</resources>
